@@ -67,7 +67,7 @@ Create_Info(database:get(Server_Tshake.."Token_Tshake"),database:get(Server_Tsha
 local RunTshake = io.open("Tshake", 'w')
 RunTshake:write([[
 #!/usr/bin/env bash
-cd $HOME/TshAkE
+cd $HOME/TshAkEx
 token="]]..database:get(Server_Tshake.."Token_Tshake")..[["
 rm -fr Tshake.lua
 wget "https://raw.githubusercontent.com/TshakeX/TshAkEx/master/Tshake.lua"
@@ -80,7 +80,7 @@ RunTshake:close()
 local RunTs = io.open("ts", 'w')
 RunTs:write([[
 #!/usr/bin/env bash
-cd $HOME/TshAkE
+cd $HOME/TshAkEx
 while(true) do
 rm -fr ../.telegram-cli
 screen -S TshAkE -X kill
