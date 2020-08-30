@@ -5989,7 +5989,7 @@ Text = [[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 [•📰 | Install the source](https://t.me/TshakeX)
 ┉ ┉ ┉ ┉ ┉ 
-• 📁 | Files and explanations 
+[• 📁 | Files and explanations ](https://t.me/TshakeX_files)
 [• 📄 | of source :](https://t.me/TshakeX_files)
 ┉ ┉ ┉ ┉ ┉
 [• 📨 | Connect DeV](https://t.me/tshakebbot)
