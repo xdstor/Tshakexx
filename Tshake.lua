@@ -5985,8 +5985,16 @@ end
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then
 Text = [[
 					
-[السورس خاص](https://t.me/HH4HHHH)		
-					
+• 🔔 | welcome to Source Tshake 'X' 
+┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+[•📰 | Install the source](https://t.me/TshakeX)
+┉ ┉ ┉ ┉ ┉ 
+• 📁 | Files and explanations 
+[• 📄 | of source :](https://t.me/TshakeX_files)
+┉ ┉ ┉ ┉ ┉
+[• 📨 | Connect DeV](https://t.me/tshakebbot)
+┉ ┉ ┉ ┉ ┉
+[⚔️ | CHANNEL DEV](https://t.me/HH4HHHH)					
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
