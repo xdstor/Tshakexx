@@ -137,13 +137,13 @@ var = database:get(bot_id.."Tshake:BasicConstructor:Rd"..chat_id) or "المنش
 elseif database:sismember(bot_id.."Tshake:Constructor"..chat_id, user_id) then
 var = database:get(bot_id.."Tshake:Constructor:Rd"..chat_id) or "المنشئ"  
 elseif database:sismember(bot_id.."Tshake:Manager"..chat_id, user_id) then
-var = database:get(bot_id.."Tshake:Manager:Rd"..chat_id) or "المدير"  
+var = database:get(bot_id.."Tshake:Comd:New:rt:User:"..chat_id, user_id) or database:get(bot_id.."Tshake:Manager:Rd"..chat_id) or "المدير"  
 elseif database:sismember(bot_id.."Tshake:Mod:User"..chat_id, user_id) then
-var = database:get(bot_id.."Tshake:Mod:Rd"..chat_id) or "الادمن"  
+var = database:get(bot_id.."Tshake:Comd:New:rt:User:"..chat_id, user_id) or database:get(bot_id.."Tshake:Mod:Rd"..chat_id) or "الادمن"  
 elseif database:sismember(bot_id.."Tshake:Special:User"..chat_id, user_id) then  
-var = database:get(bot_id.."Tshake:Special:Rd"..chat_id) or "المميز"  
+var = database:get(bot_id.."Tshake:Comd:New:rt:User:"..chat_id, user_id) or database:get(bot_id.."Tshake:Special:Rd"..chat_id) or "المميز"  
 else  
-var = database:get(bot_id.."Tshake:Memp:Rd"..chat_id) or "العضو"
+var = database:get(bot_id.."Tshake:Comd:New:rt:User:"..chat_id, user_id) or database:get(bot_id.."Tshake:Memp:Rd"..chat_id) or "العضو"
 end  
 return var
 end 
@@ -665,7 +665,7 @@ end
 end
 end
 if text and database:get(bot_id..'lock:Fars'..msg.chat_id_) and not Addictive(msg) then 
-list = {"ڄ","ك","که","پی","خسته","برم","راحتی","بیام","بپوشم","كرمه","چه","چ","ڬ","ٺ","چ","ڇ","ڿ","ڀ","ڎ","ݫ","ژ","ڟ","ݜ","ڸ","پ","۴","زدن","دخترا","دیوث","مک","زدن"}
+list = {"ڄ","که","پی","خسته","برم","راحتی","بیام","بپوشم","كرمه","چه","چ","ڬ","ٺ","چ","ڇ","ڿ","ڀ","ڎ","ݫ","ژ","ڟ","ݜ","ڸ","پ","۴","زدن","دخترا","دیوث","مک","زدن"}
 for k,v in pairs(list) do
 if string.find(text,v) ~= nil then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
