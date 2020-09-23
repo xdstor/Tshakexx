@@ -6264,16 +6264,17 @@ end
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then
 Text = [[
 					
-• 🔔 | welcome to Source Tshake 'X' 
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-[•📰 | Install the source](https://t.me/TshakeX)
-┉ ┉ ┉ ┉ ┉ 
-[• 📁 | Files and explanations ](https://t.me/TshakeX_files)
-[• 📄 | of source :](https://t.me/TshakeX_files)
-┉ ┉ ┉ ┉ ┉
-[• 📨 | Connect DeV](https://t.me/tshakebbot)
-┉ ┉ ┉ ┉ ┉
-[⚔️ | CHANNEL DEV](https://t.me/DDDDiD)					
+⚙️┇ welcome to Source
+⌔━━━━━━━━━━━━━⌔
+[🦁┇TshakeX TEAM](t.me/TshakeX)
+ ⌔━━━━━━━━━━━━━⌔
+ 🔎┇ [INSTALL The Source](t.me/TshakeX)
+⌔━━━━━━━━━━━━━⌔
+🗃┇ [Source Files](t.me/TshakeX_files)
+⌔━━━━━━━━━━━━━⌔
+📥┇[ConnectDeV](t.me/tshakebbot)
+⌔━━━━━━━━━━━━━⌔
+ 🔰┇[CHANNEL DEV](t.me/DDDDiD)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
