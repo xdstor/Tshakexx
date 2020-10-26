@@ -4496,7 +4496,7 @@ end,nil)
 end
 
 if text == "رتبتي" then
-local rtp = Get_Rank(msg.sender_user_id_,msg.chat_id_)
+local rtp = database:get(bot_id.."Tshake:Comd:New:rt:User:"..msg.chat_id_..msg.sender_user_id_) or Get_Rank(msg.sender_user_id_,msg.chat_id_)
 send(msg.chat_id_, msg.id_,"💢┇ رتبتك في البوت » "..rtp)
 end
 if text == "اسمي"  then 
@@ -5370,7 +5370,7 @@ end
 local Id = data.id_
 local NumMsg = database:get(bot_id..'Tshake:messageUser'..msg.chat_id_..':'..data.id_) or 0
 local TotalMsg = Total_message(NumMsg)
-local Status_Gps = Get_Rank(Id,msg.chat_id_)
+local Status_Gps = database:get(bot_id.."Tshake:Comd:New:rt:User:"..msg.chat_id_..Id) or Get_Rank(Id,msg.chat_id_)
 local message_edit = database:get(bot_id..'Tshake:message_edit'..msg.chat_id_..data.id_) or 0
 local Num_Games = database:get(bot_id.."Tshak:Msg_User"..msg.chat_id_..":"..data.id_) or 0
 local Add_Mem = database:get(bot_id.."Tshake:Add:Memp"..msg.chat_id_..":"..data.id_) or 0
@@ -5394,7 +5394,7 @@ end
 local Id = data.id_
 local NumMsg = database:get(bot_id..'Tshake:messageUser'..msg.chat_id_..':'..data.id_) or 0
 local TotalMsg = Total_message(NumMsg)
-local Status_Gps = Get_Rank(Id,msg.chat_id_)
+local Status_Gps = database:get(bot_id.."Tshake:Comd:New:rt:User:"..msg.chat_id_..Id) or Get_Rank(Id,msg.chat_id_)
 local message_edit = database:get(bot_id..'Tshake:message_edit'..msg.chat_id_..data.id_) or 0
 local Num_Games = database:get(bot_id.."Tshak:Msg_User"..msg.chat_id_..":"..data.id_) or 0
 local Add_Mem = database:get(bot_id.."Tshake:Add:Memp"..msg.chat_id_..":"..data.id_) or 0
