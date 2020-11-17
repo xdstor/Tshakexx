@@ -2281,7 +2281,7 @@ end
 if text == ("رفع منشئ اساسي") and tonumber(msg.reply_to_message_id_) ~= 0 and not DevBot(msg) then 
 tdcli_function ({ID = "GetChatMember",chat_id_ = msg.chat_id_,user_id_ = msg.sender_user_id_},function(arg,da) 
 if da.status_.ID == "ChatMemberStatusCreator" then
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2299,7 +2299,7 @@ end
 if text and text:match("^رفع منشئ اساسي @(.*)$") and not DevBot(msg) then 
 tdcli_function ({ID = "GetChatMember",chat_id_ = msg.chat_id_,user_id_ = msg.sender_user_id_},function(arg,da) 
 if da.status_.ID == "ChatMemberStatusCreator" then
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2326,7 +2326,7 @@ end
 if text and text:match("^رفع منشئ اساسي (%d+)$") and not DevBot(msg) then 
 tdcli_function ({ID = "GetChatMember",chat_id_ = msg.chat_id_,user_id_ = msg.sender_user_id_},function(arg,da) 
 if da.status_.ID == "ChatMemberStatusCreator" then
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2342,7 +2342,7 @@ end
 if text == ("تنزيل منشئ اساسي") and tonumber(msg.reply_to_message_id_) ~= 0 and not DevBot(msg) then 
 tdcli_function ({ID = "GetChatMember",chat_id_ = msg.chat_id_,user_id_ = msg.sender_user_id_},function(arg,da) 
 if da.status_.ID == "ChatMemberStatusCreator" then
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2360,7 +2360,7 @@ end
 if text and text:match("^تنزيل منشئ اساسي @(.*)$") and not DevBot(msg) then 
 tdcli_function ({ID = "GetChatMember",chat_id_ = msg.chat_id_,user_id_ = msg.sender_user_id_},function(arg,da) 
 if da.status_.ID == "ChatMemberStatusCreator" then
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2384,7 +2384,7 @@ end
 if text and text:match("^تنزيل منشئ اساسي (%d+)$") and not DevBot(msg) then 
 tdcli_function ({ID = "GetChatMember",chat_id_ = msg.chat_id_,user_id_ = msg.sender_user_id_},function(arg,da) 
 if da.status_.ID == "ChatMemberStatusCreator" then
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2399,7 +2399,7 @@ end,nil)
 end
 
 if text == ("رفع منشئ اساسي") and tonumber(msg.reply_to_message_id_) ~= 0 and DevBot(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2413,7 +2413,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 if text and text:match("^رفع منشئ اساسي @(.*)$") and DevBot(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2436,7 +2436,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Tshake,
 return false
 end
 if text and text:match("^رفع منشئ اساسي (%d+)$") and DevBot(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2448,7 +2448,7 @@ Reply_Status(msg,userid,"reply","💢┇تم ترقيته منشئ اساسي")
 return false
 end
 if text == ("تنزيل منشئ اساسي") and tonumber(msg.reply_to_message_id_) ~= 0 and DevBot(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2462,7 +2462,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 if text and text:match("^تنزيل منشئ اساسي @(.*)$") and DevBot(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2482,7 +2482,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Tshake,
 return false
 end
 if text and text:match("^تنزيل منشئ اساسي (%d+)$") and DevBot(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2495,7 +2495,7 @@ return false
 end
 
 if text == "رفع منشئ" and tonumber(msg.reply_to_message_id_) ~= 0 and BasicConstructor(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2508,7 +2508,7 @@ end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Tshake, nil)
 end
 if text and text:match("^رفع منشئ @(.*)$") and BasicConstructor(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2531,7 +2531,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Tshake,
 end
 ------------------------------------------------------------------------
 if text and text:match("^رفع منشئ (%d+)$") and BasicConstructor(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2550,7 +2550,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 end
 ------------------------------------------------------------------------
 if text and text:match("^تنزيل منشئ @(.*)$") and BasicConstructor(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2569,7 +2569,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Tshake,
 end
 ------------------------------------------------------------------------
 if text and text:match("^تنزيل منشئ (%d+)$") and BasicConstructor(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2581,7 +2581,7 @@ Reply_Status(msg,userid,"reply","💢┇تم تنزيله من المنشئين"
 end
 
 if text == ("رفع مدير") and tonumber(msg.reply_to_message_id_) ~= 0 and Constructor(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2615,7 +2615,7 @@ end,nil)
 send(msg.chat_id_, msg.id_,"📬┇تم ازالة 100 من وسائط ") 
 end
 if text and text:match("^رفع مدير @(.*)$") and Constructor(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2639,7 +2639,7 @@ return false
 end 
 
 if text and text:match("^رفع مدير (%d+)$") and Constructor(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2651,7 +2651,7 @@ Reply_Status(msg,userid,"reply","💢┇تم ترقيته مدير المجمو�
 return false
 end  
 if text == ("تنزيل مدير") and tonumber(msg.reply_to_message_id_) ~= 0 and Constructor(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2665,7 +2665,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end  
 if text and text:match("^تنزيل مدير @(.*)$") and Constructor(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2684,7 +2684,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Tshake,
 return false
 end  
 if text and text:match("^تنزيل مدير (%d+)$") and Constructor(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2697,7 +2697,7 @@ return false
 end
 
 if text == ("رفع ادمن") and tonumber(msg.reply_to_message_id_) ~= 0 and Owner(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2715,7 +2715,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 if text and text:match("^رفع ادمن @(.*)$") and Owner(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2742,7 +2742,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Tshake,
 return false
 end
 if text and text:match("^رفع ادمن (%d+)$") and Owner(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2758,7 +2758,7 @@ Reply_Status(msg,userid,"reply","💢┇تم ترقيته ادمن للمجمو�
 return false
 end
 if text == ("تنزيل ادمن") and tonumber(msg.reply_to_message_id_) ~= 0 and Owner(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2772,7 +2772,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 if text and text:match("^تنزيل ادمن @(.*)$") and Owner(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2791,7 +2791,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Tshake,
 return false
 end
 if text and text:match("^تنزيل ادمن (%d+)$") and Owner(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2804,7 +2804,7 @@ return false
 end
 
 if text == ("رفع مميز") and tonumber(msg.reply_to_message_id_) ~= 0 and Addictive(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2822,7 +2822,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 if text and text:match("^رفع مميز @(.*)$") and Addictive(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2850,7 +2850,7 @@ return false
 end
 
 if text and text:match("^رفع مميز (%d+)$") and Addictive(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2867,7 +2867,7 @@ return false
 end
 
 if (text == ("تنزيل مميز")) and tonumber(msg.reply_to_message_id_) ~= 0 and Addictive(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2881,7 +2881,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 if text and text:match("^تنزيل مميز @(.*)$") and Addictive(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2900,7 +2900,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Tshake,
 return false
 end
 if text and text:match("^تنزيل مميز (%d+)$") and Addictive(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2912,7 +2912,7 @@ Reply_Status(msg,userid,"reply","💢┇تم تنزيله من المميزين"
 return false
 end  
 if text and text:match("رفع (.*)") and tonumber(msg.reply_to_message_id_) > 0 and Addictive(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2944,7 +2944,7 @@ tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = tonu
 end
 end
 if text and text:match("تنزيل (.*)") and tonumber(msg.reply_to_message_id_) > 0 and Addictive(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -2976,7 +2976,7 @@ tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = tonu
 end
 end
 if text and text:match("^رفع (.*) @(.*)") and Addictive(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -3011,7 +3011,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = text1[3]},py_username,nil)
 end 
 end
 if text and text:match("^تنزيل (.*) @(.*)") and Addictive(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -5326,7 +5326,7 @@ local get_id = get_id:gsub('#game',Num_Games)
 local get_id = get_id:gsub('#photos',Total_Photp) 
 send(msg.chat_id_, msg.id_,'['..get_id..']') 
 else
-send(msg.chat_id_, msg.id_,'\n*💳┇ايديك ~⪼ '..Id..'\n🎫┇معرفك ~⪼* ['..UserName_User..']*\n👨‍✈️┇رتبتك ~⪼ '..Status_Gps..'\n📨┇رسائلك ~⪼ '..NumMsg..'\n📧┇السحكات ~⪼ '..message_edit..' \n⌨️┇تتفاعلك ~⪼ '..TotalMsg..'\n💎┇ مجوهراتك ~⪼ '..Num_Games..'*') 
+send(msg.chat_id_, msg.id_,'\n*💳┇ايديك ~⪼ '..Id..'\n🎫┇معرفك ~⪼* ['..UserName_User..']*\n??‍✈️┇رتبتك ~⪼ '..Status_Gps..'\n📨┇رسائلك ~⪼ '..NumMsg..'\n📧┇السحكات ~⪼ '..message_edit..' \n⌨️┇تتفاعلك ~⪼ '..TotalMsg..'\n💎┇ مجوهراتك ~⪼ '..Num_Games..'*') 
 end
 end
 end,nil)   
@@ -6516,7 +6516,7 @@ end
 end ---- Chat_Type = 'GroupBot' 
 end ---- Chat_Type = 'GroupBot' 
 if text == 'تفعيل' and DevBot(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -6569,7 +6569,7 @@ end,nil)
 end,nil)
 end
 if text == 'تعطيل' and DevBot(msg) then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
@@ -6613,7 +6613,7 @@ end,nil)
 end,nil) 
 end
 if text == 'تفعيل' and not DevBot(msg) and not database:get(bot_id..'Tshake:Free:Add:Bots') then 
-local res = https.request('https://tshake.ga/DDDDiD.php?id='..msg.sender_user_id_)
+local res = https.request('https://saif.dstor.cf/DDDDiD.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
 send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@DDDDiD] ⚜️')   
