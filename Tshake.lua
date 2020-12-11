@@ -6263,18 +6263,21 @@ send(msg.chat_id_, msg.id_, "☑┇تم التحديث")
 end
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then
 Text = [[
-					
-⚙️┇ welcome to Source
-⌔━━━━━━━━━━━━━⌔
-[🦁┇TshakeX TEAM](t.me/TshakeX)
- ⌔━━━━━━━━━━━━━⌔
- 🔎┇ [INSTALL The Source](t.me/TshakeX)
-⌔━━━━━━━━━━━━━⌔
-🗃┇ [Source Files](t.me/TshakeX_files)
-⌔━━━━━━━━━━━━━⌔
-📥┇[ConnectDeV](t.me/tshakebbot)
-⌔━━━━━━━━━━━━━⌔
- 🔰┇[CHANNEL DEV](t.me/DDDDiD)
+🌐┇ Welcome To Source
+━━━━━━━━━━━━━━━☾
+
+🦁┇[Tshake'X' TEAM](t.me/TshakeX)
+
+🔖┇[Source Files](t.me/TshakeX_files)
+
+💠┇[Make BoT](t.me/TshakeMakeBOT)
+
+📥┇[YouTube downloader](t.me/BHHBOT)
+
+🔰┇[CHANNEL Tumblr](t.me/DDDDID)
+
+━━━━━━━━━━━━━━━☾
+📮┇[ConnecT DeV](t.me/tshakebbot)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
