@@ -5226,6 +5226,49 @@ if text == 'تعطيل الايدي بالصوره' and Owner(msg) then
 database:set(bot_id..'Tshake:Lock:ID:Bot:Photo'..msg.chat_id_,true) 
 send(msg.chat_id_, msg.id_,'☑┇تم تعطيل الايدي بالصوره') 
 end
+if text == 'تفعيل التنزيل' and Owner(msg) then   
+database:del(bot_id..'dw:bot:api'..msg.chat_id_) 
+Text = '\n تم تفعيل التنزيلات' 
+send(msg.chat_id_, msg.id_,Text) 
+end
+if text == 'تعطيل التنزيل' and Owner(msg) then  
+database:set(bot_id..'dw:bot:api'..msg.chat_id_,true) 
+Text = '\nتم تعطيل التنزيلات' 
+send(msg.chat_id_, msg.id_,Text) 
+end 
+if text and text:match('^(.*) !!$') and not database:get(bot_id..'dw:bot:api'..msg.chat_id_) then            
+local Ttext = text:match('^(.*) !!$') 
+local ytddl = https.request('https://devstorm.ml/sr.php?search='..URL.escape(Ttext))
+local zxe = JSON.decode(ytddl)
+for k,v in pairs(zxe.results) do
+if k == 1 then
+local msgin = msg.id_/2097152/0.5 
+https.request('https://devstorm.ml/yt.php?url='..v.url..'&token='..token..'&chat='..msg.chat_id_..'&type=mp3&msg='..msgin)
+end
+end
+end
+if text and text:match('^(.*) ؟؟$') and not database:get(bot_id..'dw:bot:api'..msg.chat_id_) then            
+local Ttext = text:match('^(.*) ؟؟$') 
+local ytddl = https.request('https://devstorm.ml/sr.php?search='..URL.escape(Ttext))
+local zxe = JSON.decode(ytddl)
+for k,v in pairs(zxe.results) do
+if k == 1 then
+local msgin = msg.id_/2097152/0.5 
+https.request('https://devstorm.ml/yt.php?url='..v.url..'&token='..token..'&chat='..msg.chat_id_..'&type=ogg&msg='..msgin)
+end
+end
+end
+if text and text:match('^(.*) !$') and not database:get(bot_id..'dw:bot:api'..msg.chat_id_) then            
+local Ttext = text:match('^(.*) !$') 
+local ytddl = https.request('https://devstorm.ml/sr.php?search='..URL.escape(Ttext))
+local zxe = JSON.decode(ytddl)
+for k,v in pairs(zxe.results) do
+if k == 1 then
+local msgin = msg.id_/2097152/0.5 
+https.request('https://devstorm.ml/yt.php?url='..v.url..'&token='..token..'&chat='..msg.chat_id_..'&type=mp4&msg='..msgin)
+end
+end
+end
 if text == 'تعين الايدي' and Owner(msg) then
 database:setex(bot_id.."Tshake:Set:Id:Gp"..msg.chat_id_..""..msg.sender_user_id_,240,true)  
 local Text= [[
