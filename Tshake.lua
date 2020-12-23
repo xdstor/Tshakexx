@@ -4417,6 +4417,68 @@ if text == "تعطيل ردود المطور" and Owner(msg) then
 database:set(bot_id.."Tshake:Reply:Sudo"..msg.chat_id_,true)   
 send(msg.chat_id_, msg.id_,"📛┇تم تعطيل ردود المطور" ) 
 end
+if text and text:match("^تنزيل الكل @(.*)$") and Owner(msg) then 
+local username = text:match("^تنزيل الكل @(.*)$")
+function Function_Tshake(extra, result, success)
+if result.id_ then
+if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
+send(msg.chat_id_,msg.id_,"💢┇عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
+return false 
+end      
+if tonumber(SUDO) == tonumber(result.id_) then
+send(msg.chat_id_, msg.id_,"💢┇ لا تستطيع تنزيل المطور الاساسي")
+return false 
+end
+if database:sismember(bot_id.."Tshake:Sudo:User",result.id_) then
+dev = "المطور ،" else dev = "" end
+if database:sismember(bot_id.."Tshake:Basic:Constructor"..msg.chat_id_, result.id_) then
+crr = "منشئ اساسي ،" else crr = "" end
+if database:sismember(bot_id.."Tshake:Constructor"..msg.chat_id_, result.id_) then
+cr = "منشئ ،" else cr = "" end
+if database:sismember(bot_id.."Tshake:Manager"..msg.chat_id_, result.id_) then
+own = "مدير ،" else own = "" end
+if database:sismember(bot_id.."Tshake:Mod:User"..msg.chat_id_, result.id_) then
+mod = "ادمن ،" else mod = "" end
+if database:sismember(bot_id.."Tshake:Special:User"..msg.chat_id_, result.id_) then
+vip = "مميز ،" else vip = ""
+end
+if Rank_Checking(result.id_,msg.chat_id_) ~= false then
+send(msg.chat_id_, msg.id_,"\n🔖┇تم تنزيل الشخص من الرتب التاليه \n📥┇ { "..dev..""..crr..""..cr..""..own..""..mod..""..vip.." } \n")
+else
+send(msg.chat_id_, msg.id_,"\n🚸┇ليس لديه رتب حتى استطيع تنزيله \n")
+end
+if tonumber(Id_Sudo) == tonumber(msg.sender_user_id_) then
+database:srem(bot_id.."Tshake:Sudo:User", result.id_)
+database:srem(bot_id.."Tshake:Basic:Constructor"..msg.chat_id_,result.id_)
+database:srem(bot_id.."Tshake:Constructor"..msg.chat_id_, result.id_)
+database:srem(bot_id.."Tshake:Manager"..msg.chat_id_, result.id_)
+database:srem(bot_id.."Tshake:Mod:User"..msg.chat_id_, result.id_)
+database:srem(bot_id.."Tshake:Special:User"..msg.chat_id_, result.id_)
+elseif database:sismember(bot_id.."Tshake:Sudo:User",msg.sender_user_id_) then
+database:srem(bot_id.."Tshake:Mod:User"..msg.chat_id_, result.id_)
+database:srem(bot_id.."Tshake:Special:User"..msg.chat_id_, result.id_)
+database:srem(bot_id.."Tshake:Manager"..msg.chat_id_, result.id_)
+database:srem(bot_id.."Tshake:Constructor"..msg.chat_id_, result.id_)
+database:srem(bot_id.."Tshake:Basic:Constructor"..msg.chat_id_,result.id_)
+elseif database:sismember(bot_id.."Tshake:Basic:Constructor"..msg.chat_id_, msg.sender_user_id_) then
+database:srem(bot_id.."Tshake:Mod:User"..msg.chat_id_, result.id_)
+database:srem(bot_id.."Tshake:Special:User"..msg.chat_id_, result.id_)
+database:srem(bot_id.."Tshake:Manager"..msg.chat_id_, result.id_)
+database:srem(bot_id.."Tshake:Constructor"..msg.chat_id_, result.id_)
+elseif database:sismember(bot_id.."Tshake:Constructor"..msg.chat_id_, msg.sender_user_id_) then
+database:srem(bot_id.."Tshake:Mod:User"..msg.chat_id_, result.id_)
+database:srem(bot_id.."Tshake:Special:User"..msg.chat_id_, result.id_)
+database:srem(bot_id.."Tshake:Manager"..msg.chat_id_, result.id_)
+elseif database:sismember(bot_id.."Tshake:Manager"..msg.chat_id_, msg.sender_user_id_) then
+database:srem(bot_id.."Tshake:Mod:User"..msg.chat_id_, result.id_)
+database:srem(bot_id.."Tshake:Special:User"..msg.chat_id_, result.id_)
+end
+else
+send(msg.chat_id_, msg.id_,"💢┇لا يوجد حساب بهاذا المعرف")
+end
+end
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Tshake, nil)
+end
 
 if text == ("تنزيل الكل") and msg.reply_to_message_id_ ~= 0 and Owner(msg) then
 function Function_Tshake(extra, result, success)
