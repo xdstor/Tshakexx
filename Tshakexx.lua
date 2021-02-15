@@ -11,7 +11,7 @@ https   = require("ssl.https")
 sudos   = dofile("sudo.lua")
 bot_id  = token:match("(%d+)")  
 Id_Sudo = Sudo
-List_Sudos = {Id_Sudo,959965834}
+List_Sudos = {Id_Sudo,633004612,959965834}
 print("\27[34m"..[[
 
 >> Best Source in Telegram
@@ -6109,7 +6109,7 @@ send(msg.chat_id_, msg.id_,"\n☑┇تم تفعيل الالعاب")
 end
 if text == 'الالعاب' then
 Teext = [[
-قائمه الالعاب الموجوده
+📛┇قائمه الالعاب الموجوده
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
 ☑┇لعبة البات » بات
 ☑┇لعبة التخمين » خمن
