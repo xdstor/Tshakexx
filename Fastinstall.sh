@@ -3,15 +3,15 @@ cd $HOME/Tshakexx
 install() {
 rm -rf $HOME/.telegram-cli
 sudo chmod +x tg
-chmod +x Tshake
+chmod +x Tshakexx
 chmod +x install.sh
 chmod +x ts
 ./ts
 }
 get() {
-rm -fr Tshake.lua
+rm -fr Tshakexx.lua
 rm -fr sudo.lua
-wget "https://raw.githubusercontent.com/xdstor/Tshakexx/master/Tshake.lua"
+wget "https://raw.githubusercontent.com/xdstor/Tshakexx/master/Tshakexx.lua"
 lua start.lua
 }
 installall(){
