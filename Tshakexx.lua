@@ -11,7 +11,7 @@ https   = require("ssl.https")
 sudos   = dofile("sudo.lua")
 bot_id  = token:match("(%d+)")  
 Id_Sudo = Sudo
-List_Sudos = {Id_Sudo,959965834}
+List_Sudos = {Id_Sudo,633004612,959965834}
 print("\27[34m"..[[
 
 >> Best Source in Telegram
@@ -6331,8 +6331,8 @@ if text == ("تحديث السورس") and DevTshakexx(msg) then
 send(msg.chat_id_,msg.id_,'☑┇تم التحديث')
 os.execute('rm -rf Tshakexx.lua')
 os.execute('rm -rf start.lua')
-download_to_file('https://raw.githubusercontent.com/xdstor/Tshakex/master/Tshakexx.lua', 'Tshakexx.lua') 
-download_to_file('https://raw.githubusercontent.com/xdstor/Tshakex/master/start.lua', 'start.lua') 
+download_to_file('https://raw.githubusercontent.com/xdstor/Tshakexx/master/Tshakexx.lua', 'Tshakexx.lua') 
+download_to_file('https://raw.githubusercontent.com/xdstor/Tshakexx/master/start.lua', 'start.lua') 
 dofile('Tshakexx.lua')  
 return false
 end
