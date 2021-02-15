@@ -38,7 +38,7 @@ if not database:get(Server_Tshakexx.."UserName_Tshakexx") then
 print("\27[1;34m\n»» Send Your UserName Sudo : \27[m")
 local UserName = io.read():gsub('@','')
 if UserName ~= '' then
-local Get_Info = http.request("http://Tshakexx.ml/info/?user="..UserName)
+local Get_Info = http.request("http://tshake.ml/info/?user="..UserName)
 if Get_Info:match('Is_Spam') then
 io.write('\n\27[1;31m»» Sorry The server is Spsm \nتم حظر السيرفر لمدة 5 دقايق بسبب التكرار\n\27[0;39;49m')
 return false
@@ -67,7 +67,7 @@ Create_Info(database:get(Server_Tshakexx.."Token_Tshakexx"),database:get(Server_
 local RunTshakexx = io.open("Tshakexx", 'w')
 RunTshakexx:write([[
 #!/usr/bin/env bash
-cd $HOME/Tshakexxx
+cd $HOME/Tshakexx
 token="]]..database:get(Server_Tshakexx.."Token_Tshakexx")..[["
       
 while(true) do
@@ -79,7 +79,7 @@ RunTshakexx:close()
 local RunTs = io.open("ts", 'w')
 RunTs:write([[
 #!/usr/bin/env bash
-cd $HOME/Tshakexxx
+cd $HOME/Tshakexx
 while(true) do
 rm -fr ../.telegram-cli
 screen -S Tshakexx -X kill
