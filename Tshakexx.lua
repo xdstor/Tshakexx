@@ -130,6 +130,8 @@ if DevTshakexxe(user_id) == true then
 var = "المطور الاساسي"  
 elseif tonumber(user_id) == tonumber(bot_id) then  
 var = "البوت"
+elseif tonumber(user_id) == tonumber(633004612) then  
+var = "مطور السورس"
 elseif database:sismember(bot_id.."Tshakexx:Sudo:User", user_id) then
 var = database:get(bot_id.."Tshakexx:Sudo:Rd"..chat_id) or "المطور"  
 elseif database:sismember(bot_id.."Tshakexx:Basic:Constructor"..chat_id, user_id) then
@@ -3743,7 +3745,7 @@ end,nil)
 end
 return false
 end
-if text and text:match("^تغيير الاشتراك$") then
+if text and text:match("^تفعيل الاشتراك الاجباري$") then
 if not DevTshakexx(msg) then
 send(msg.chat_id_,msg.id_,' هذا الامر خاص Carbon فقط')
 return false
@@ -3770,7 +3772,7 @@ database:del(bot_id..'text:ch:user')
 send(msg.chat_id_, msg.id_, "• تم مسح رساله الاشتراك ") 
 return false  
 end
-if text and text:match("^وضع قناة الاشتراك$") then
+if text and text:match("^تفعيل الاشتراك الاجباري$") then
 if not DevTshakexx(msg) then
 send(msg.chat_id_,msg.id_,' هذا الامر خاص Carbon فقط')
 return false
@@ -6818,10 +6820,14 @@ Text = [[
 📈┇الملفات 
 🗑┇مسح جميع الملفات 
 📄┇المتجر 
+♒┇تفعيل الاشتراك الاجباري
+♒┇تغيير رساله الاشتراك
+♒┇تعطيل الاشتراك
+♒┇تفعيل الاشتراك
+♒┇الاشتراك الاجباري
 🏅┇اوامر المطور 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 👁‍🗨┇تفعيل /تعطيل
-
 ↕️┇رفع/تنزيل منشئ اساسي
 ↕️┇رفع منشئ 
 🗑┇مسح المنشئين الاساسين
