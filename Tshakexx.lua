@@ -2210,70 +2210,10 @@ send(msg.chat_id_, msg.id_,Text)
 
 end 
 
-if text and text:match('^(.*) !!$') and not database:get(bot_id..'dw:bot:api'..msg.chat_id_) then            
-
-local Ttext = text:match('^(.*) !!$') 
-
-local ytddl = https.request('https://devstorm.ml/sr.php?search='..URL.escape(Ttext))
-
-local zxe = JSON.decode(ytddl)
-
-for k,v in pairs(zxe.results) do
-
-if k == 1 then
-
+if text and text:match('^بحث (.*)$') and not database:get(bot_id..'dw:bot:api'..msg.chat_id_) then            
+local Ttext = text:match('^بحث (.*)$') 
 local msgin = msg.id_/2097152/0.5 
-
-https.request('https://devstorm.ml/yt.php?url='..v.url..'&token='..token..'&chat='..msg.chat_id_..'&type=mp3&msg='..msgin)
-
-end
-
-end
-
-end
-
-if text and text:match('^(.*) ؟؟$') and not database:get(bot_id..'dw:bot:api'..msg.chat_id_) then            
-
-local Ttext = text:match('^(.*) ؟؟$') 
-
-local ytddl = https.request('https://devstorm.ml/sr.php?search='..URL.escape(Ttext))
-
-local zxe = JSON.decode(ytddl)
-
-for k,v in pairs(zxe.results) do
-
-if k == 1 then
-
-local msgin = msg.id_/2097152/0.5 
-
-https.request('https://devstorm.ml/yt.php?url='..v.url..'&token='..token..'&chat='..msg.chat_id_..'&type=ogg&msg='..msgin)
-
-end
-
-end
-
-end
-
-if text and text:match('^(.*) !$') and not database:get(bot_id..'dw:bot:api'..msg.chat_id_) then            
-
-local Ttext = text:match('^(.*) !$') 
-
-local ytddl = https.request('https://devstorm.ml/sr.php?search='..URL.escape(Ttext))
-
-local zxe = JSON.decode(ytddl)
-
-for k,v in pairs(zxe.results) do
-
-if k == 1 then
-
-local msgin = msg.id_/2097152/0.5 
-
-https.request('https://devstorm.ml/yt.php?url='..v.url..'&token='..token..'&chat='..msg.chat_id_..'&type=mp4&msg='..msgin)
-
-end
-
-end
-
+https.request('https://devstorm.ml/tshakexs.php?token='..token..'&chat_id='..msg.chat_id_..'&Text='..URL.escape(Ttext)..'&msg='..msgin)
 end
 if text == ("حظر عام") and tonumber(msg.reply_to_message_id_) ~= 0 and DevTshakexx(msg) then
 function Function_Tshakexx(extra, result, success)
